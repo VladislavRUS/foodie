@@ -1,0 +1,38 @@
+.home {
+  position: relative;
+  height: 100%;
+  padding-top: 28px;
+  overflow: hidden;
+
+  &__header {
+    position: relative;
+    margin: 0 auto 142px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -400px;
+    right: -300px;
+    height: auto;
+    z-index: -1;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__salad {
+    position: absolute;
+    top: 140px;
+    right: 63px;
+    z-index: 0;
+  }
+
+  &__pieces {
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    z-index: 0;
+  }
+}

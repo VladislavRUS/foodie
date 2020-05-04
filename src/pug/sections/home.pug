@@ -1,0 +1,37 @@
+include ../mixins/image.pug
+include ../mixins/note.pug
+
+section.home
+    +image('images/home_wave.png').home__bg
+    +image('images/home_salad.png').home__salad
+    +image('images/home_pieces.png').home__pieces
+
+    div.container
+        div.home__header
+            header.header
+                +image('images/logo.png').header__logo
+
+                - var links = [ { href: '#home', name: 'Home' }, { href: '#packages', name: 'Packages' }, { href: '#about-us', name: 'About us' }, { href: '#contact-us', name: 'Contact us' } ]
+
+                div.header__navigation
+                    nav.navigation
+                        each link in links
+                            a.navigation__link(href=link.href) #{link.name}
+
+                div.header__cart
+                    div.cart
+                        div.cart__notification
+                        +image('icons/cart.png').cart__image
+
+                div.header__booking
+                    button.button._secondary Booking now
+
+        div.home__content
+            div.note-favorite
+                div.note-favorite__text
+                    +note('About', 'Your Favourite Food\n' +
+                    'Delivered Hot & \n' +
+                    'Fresh', 'Healthy switcher chefs do all the prep work, like peeding, chopping & marinating, so you can cook a fresh food.')
+                div.note-favorite__button
+                    button.button._primary Order now
+                        +image('icons/arrow_right.png').button-icon-right

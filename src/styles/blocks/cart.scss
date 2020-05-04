@@ -1,0 +1,15 @@
+.cart {
+  position: relative;
+  width: 29px;
+  height: 25px;
+
+  &__notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,17 @@
+@import "node_modules/reset-css/reset";
+@import "./fonts";
+@import "./common";
+@import "blocks/_main";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Khula, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}

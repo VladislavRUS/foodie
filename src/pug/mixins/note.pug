@@ -1,0 +1,6 @@
+mixin note(hint, title, text)
+    article.note
+        if hint
+            article.note__hint #{hint}
+        article.note__title #{title}
+        article.note__text #{text}

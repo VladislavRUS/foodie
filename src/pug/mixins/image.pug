@@ -1,0 +1,7 @@
+mixin image(name)
+    - var nameWithoutExtension = name.substring(0, name.lastIndexOf('.'))
+    - var extension = name.substring(name.lastIndexOf('.'))
+    - var src1 = `/assets/${name}`
+    - var src2 = `/assets/${nameWithoutExtension}@2x${extension} 2x`
+    - var src3 = `/assets/${nameWithoutExtension}@3x${extension} 3x`
+    img(srcset=`${src1}, ${src2}, ${src3}` src=`${src1}`)&attributes(attributes)

@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25.6px;
+    text-decoration: none;
+
+    & + & {
+      margin-left: 45px;
+    }
+  }
+}

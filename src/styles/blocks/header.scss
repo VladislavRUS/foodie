@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 48px;
+
+  &__logo {
+    width: 75px;
+    height: 26px;
+  }
+
+  &__navigation {
+    margin-left: auto;
+    margin-right: 53px;
+  }
+
+  &__cart {
+    margin-right: 26px;
+  }
+}

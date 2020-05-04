@@ -1,0 +1,28 @@
+.button {
+  padding: 0 26px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 800;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &._primary {
+    background-color: #fe9e0d;
+    box-shadow: 0 24px 40px rgba(255, 159, 13, 0.15);
+    color: #ffffff;
+  }
+
+  &._secondary {
+    background-color: #ffffff;
+    color: #484848;
+  }
+
+  &-icon-right {
+    position: relative;
+    margin-left: 6px;
+    top: 2px;
+  }
+}
