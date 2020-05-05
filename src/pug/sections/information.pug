@@ -1,0 +1,9 @@
+section.information
+    - var items = [ { iconPath: '/assets/icons/watch.svg', title: 'Today 10:00 am - 7:00 pm', subtitle: 'Working hours' }, { iconPath: '/assets/icons/location.svg', title: 'Velyka Vasylkivska 100', subtitle: 'Velyka Vasylkivska 100' }, { iconPath: '/assets/icons/phone.svg', title: '+38 (063)833 24 15', subtitle: 'Call Online' } ]
+
+    each item in items
+        div.information__info-card
+            div.info-card
+                img.info-card__icon(src= item.iconPath)
+                div.info-card__title #{item.title}
+                div.info-card__subitlte #{item.subtitle}
